@@ -35,3 +35,12 @@ body {
 .over_limit {
 	color: red;
 }
+
+#map {
+	float: right;
+	padding-right: 100px ;
+	color: blue;
+	width: 600px;
+	height: 400px;
+	background-color: blue;
+}
