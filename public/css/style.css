@@ -31,3 +31,7 @@ body {
 .active {
 	color: green;
 }
+
+.over_limit {
+	color: red;
+}

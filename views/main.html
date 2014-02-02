@@ -2,7 +2,10 @@
 	<h2>Tele-source Server</h2>
 	<p>UNICEF Build</p>
 	<form method="get" action="/input">
-	 <div><input placeholder="insert message here" name="message" type="text" maxlength="120" /><span class="num">120</span></div>
+	  <div>
+        <input placeholder="insert message here" name="message" type="text" maxlength="120" onkeyup='updatecharactercount(this)'/>
+        <span class="num">120</span>
+      </div>
 	  <div><button id="mainButton" type="submit">send message </button></div>
 	</form>  
   <h2> IMSI Numbers </h2>

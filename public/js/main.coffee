@@ -19,3 +19,12 @@ setInterval(->
             if imsi.length > 1
                 $("#IMSI"+imsi).addClass 'active'
 , 10 * 1000)
+
+window.updatecharactercount = (el) ->
+  charsleft = $(el).attr('maxlength') - $(el).val().length
+  $('.num').text charsleft
+
+  if +charsleft is 0
+    $('.num').addClass('over_limit')
+  else
+    $('.num').removeClass('over_limit')
